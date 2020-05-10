@@ -1,5 +1,11 @@
 import 'file:///D:/program%20files/AndroidStudioProjects/blood_donation/lib/screens/Welcome_Screen.dart';
+import 'package:blooddonation/screens/AppointmentDate.dart';
+import 'package:blooddonation/screens/AppointmentsListOrg.dart';
+import 'package:blooddonation/screens/CreateAppointment.dart';
+import 'package:blooddonation/screens/HomeScreen.dart';
 import 'package:blooddonation/screens/LoginSignup.dart';
+import 'package:blooddonation/screens/OrganizationHome.dart';
+import 'package:blooddonation/screens/ReviewAppointment.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,26 +19,23 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Blood Donation',
       theme: ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or simply save your changes to "hot reload" in a Flutter IDE).
-        // Notice that the counter didn't reset back to zero; the application
-        // is not restarted.
-        primarySwatch: Colors.blue,
-        // This makes the visual density adapt to the platform that you run
-        // the app on. For desktop platforms, the controls will be smaller and
-        // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: WelcomeScreen(),
-      initialRoute: WelcomeScreen.id,
+      home: OrganizationHome(),
+      initialRoute: OrganizationHome.id,
       routes: {
         WelcomeScreen.id:(context)=>WelcomeScreen(),
         LoginSignup.id:(context)=>LoginSignup(),
+
+        AppointmentDate.id:(context)=>AppointmentDate(),
+        CreateAppointment.id:(context)=>CreateAppointment(),
+
+
+        AppointmentListOrg.id:(context)=>AppointmentListOrg(),
+        AppointmentReview.id:(context)=>AppointmentReview(),
+        OrganizationHome.id:(context)=>OrganizationHome(),
+        HomeScreen.id:(context)=>HomeScreen(),
+
 
       },
     );
