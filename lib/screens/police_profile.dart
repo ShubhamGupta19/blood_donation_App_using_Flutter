@@ -1,3 +1,4 @@
+import 'package:blooddonation/components/FormTextField.dart';
 import 'package:flutter/material.dart';
 
 class PoliceProfile extends StatefulWidget {
@@ -32,10 +33,13 @@ class _PoliceProfileState extends State<PoliceProfile> {
                   padding: EdgeInsets.all(30.0),
                   child: Column(
                     children: <Widget>[
-                      TextFieldCop(hintText: 'Name of the police station'),
-                      TextFieldCop(hintText: 'Name of SHO'),
-                      TextFieldCop(hintText: 'Location of police station'),
-                      TextFieldCop(hintText: 'Contact Number'),
+                      FormTextField(hintText: 'Name of the police station'),
+                      SizedBox(height: 20.0),
+                      FormTextField(hintText: 'Name of SHO'),
+                      SizedBox(height: 20.0),
+                      FormTextField(hintText: 'Location of police station'),
+                      SizedBox(height: 20.0),
+                      FormTextField(hintText: 'Contact Number'),
                       SizedBox(height: 30.0),
                       GestureDetector(
                         onTap: (){
@@ -74,53 +78,3 @@ class _PoliceProfileState extends State<PoliceProfile> {
   }
 }
 
-class TextFieldCop extends StatelessWidget {
-  final String hintText;
-  TextFieldCop({this.hintText});
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      padding: EdgeInsets.all(5),
-      decoration: BoxDecoration(
-        color: Colors.white,
-        borderRadius: BorderRadius.circular(10),
-      ),
-      child: Container(
-        child: Container(
-          padding: EdgeInsets.all(5),
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black,
-                blurRadius: 2.0,
-                spreadRadius: 0.0,
-                offset: Offset(2.0,
-                    2.0), // shadow direction: bottom right
-              )
-            ],
-          ),
-          child: Container(
-            padding: EdgeInsets.all(8.0),
-            decoration: BoxDecoration(
-              border: Border(
-                  bottom:
-                      BorderSide(color: Colors.grey[100])),
-            ),
-            child: TextField(
-              decoration: InputDecoration(
-                border: InputBorder.none,
-                hintText: "$hintText",
-                hintStyle: TextStyle(
-                    color: Colors.grey,
-                    fontWeight: FontWeight.bold),
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}

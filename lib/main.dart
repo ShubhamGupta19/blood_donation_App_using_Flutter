@@ -27,8 +27,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: OrganizationHome(),
-      initialRoute: OrganizationHome.id,
+      home: WelcomeScreen(),
+      initialRoute: WelcomeScreen.id,
       routes: {
         AppointmentDate.id:(context)=>AppointmentDate(),
         CreateAppointment.id:(context)=>CreateAppointment(),

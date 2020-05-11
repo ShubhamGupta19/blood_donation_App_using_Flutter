@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
+import 'package:blooddonation/components/FormTextField.dart';
 
 class IndividualSignUp extends StatefulWidget {
   static String id = 'IndividualSignUp';
@@ -40,7 +41,7 @@ class _IndividualSignUpState extends State<IndividualSignUp> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Individual Signup'),
-        backgroundColor: Color(0xFFff316a),
+        backgroundColor: Colors.red,
       ),
       resizeToAvoidBottomPadding: false,
       resizeToAvoidBottomInset: false,
@@ -369,41 +370,4 @@ class _IndividualSignUpState extends State<IndividualSignUp> {
   }
 }
 
-class FormTextField extends StatelessWidget {
-  final String hintText;
-  FormTextField({this.hintText});
 
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      child: Container(
-        padding: EdgeInsets.all(5),
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
-          boxShadow: [
-            BoxShadow(
-              color: Colors.black,
-              blurRadius: 1.0,
-              spreadRadius: 0.0,
-              offset: Offset(2.0, 2.0), // shadow direction: bottom right
-            )
-          ],
-        ),
-        child: Container(
-          padding: EdgeInsets.all(8.0),
-          decoration: BoxDecoration(
-            border: Border(bottom: BorderSide(color: Colors.grey[100])),
-          ),
-          child: TextField(
-            decoration: InputDecoration(
-              border: InputBorder.none,
-              hintText: '$hintText',
-              hintStyle: TextStyle(color: Colors.grey),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
