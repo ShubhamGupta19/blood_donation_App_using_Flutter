@@ -1,4 +1,5 @@
 import 'package:blooddonation/screens/email_login.dart';
+import 'package:blooddonation/screens/pass_confirm.dart';
 import 'package:blooddonation/screens/signup_as.dart';
 import 'package:flutter/material.dart';
 import 'package:blooddonation/components/RedButton.dart';
@@ -121,7 +122,7 @@ class LoginSignupState extends State<LoginSignup> {
                     btnName: 'SIGNUP',
                     onTap: (){
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => SignUpAs()));
+                          builder: (context) => PassConfirm()));
                     },
                   ),
                   SizedBox(

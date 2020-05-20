@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "825604231782",
+    "firebase_url": "https://flutter-login-page-ui-c0ec0.firebaseio.com",
+    "project_id": "flutter-login-page-ui-c0ec0",
+    "storage_bucket": "flutter-login-page-ui-c0ec0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:825604231782:android:196cf3551c4bf6b2ea13a7",
+        "android_client_info": {
+          "package_name": "me.gupta.blooddonation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "825604231782-qec9qj1l1jmqpaj398k6m9j2dor1qs8s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAZaT4UyHG5pSqaKX1vZYRN7tpbRVXEbM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "825604231782-qec9qj1l1jmqpaj398k6m9j2dor1qs8s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

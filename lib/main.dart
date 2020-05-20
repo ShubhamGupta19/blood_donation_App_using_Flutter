@@ -8,6 +8,7 @@ import 'package:blooddonation/screens/ReviewAppointment.dart';
 import 'package:blooddonation/screens/Welcome_Screen.dart';
 import 'package:blooddonation/screens/email_login.dart';
 import 'package:blooddonation/screens/individual_signup.dart';
+import 'package:blooddonation/screens/pass_confirm.dart';
 import 'package:blooddonation/screens/signup_as.dart';
 import 'package:blooddonation/screens/police_profile.dart';
 import 'package:blooddonation/screens/organizational_profile.dart';
@@ -23,9 +24,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Blood Donation',
       theme: ThemeData(
-        visualDensity: VisualDensity.adaptivePlatformDensity,
+       // visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: WelcomeScreen(),
       initialRoute: WelcomeScreen.id,
@@ -44,6 +46,7 @@ class MyApp extends StatelessWidget {
         PoliceProfile.id:(context)=>PoliceProfile(),
         VerifyNumber.id:(context)=>VerifyNumber(),
         HomeScreen.id:(context)=>HomeScreen(),
+        PassConfirm.id:(context)=>PassConfirm(),
       },
     );
   }
